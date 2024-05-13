@@ -33,7 +33,7 @@ bot.start(async (ctx) => {
 });
 
 function selectCity(ctx: Context) {
-    const cities = ['almaty', 'astana', 'shymkent','karaganda'];
+    const cities = ['almaty', 'astana', 'shymkent','karaganda','aktobe', 'kostanai', 'pavlodar'];
     const keyboard = Markup.inlineKeyboard(
         cities.map(city => Markup.button.callback(city, `subscribe_${city}`)), { columns: 2 }
     );
